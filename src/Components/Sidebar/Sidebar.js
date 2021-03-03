@@ -20,18 +20,18 @@ const Sidebar = ({sidebarOpen, closeSidebar }) => {
              <div className="sidebar__menu">
                  <div className="sidebar__link ">
                      <i className="fa fa-home"></i>
-                     <a href="#">Home</a>
+                     <a href="/">Home</a>
                  </div>
                  {/* <div className="sidebar__title ">
                     <h4>MNG</h4>
                 </div> */}
                  <div className="sidebar__link">
                      <i className="fa fa-user-secret"></i>
-                     <a href="#">Dashboard</a>
+                     <a href="/dashboard">Dashboard</a>
                  </div>
                  <div className="sidebar__link">
                      <i className="fa fa-building-o"></i>
-                     <a href="#">User Profile</a>
+                     <a href="/userprofile">My Profile</a>
                  </div>
                  <div className="sidebar__link">
                      <i className="fa fa-wrench"></i>
