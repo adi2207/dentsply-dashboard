@@ -1,4 +1,4 @@
-import './UserProfile.css';
+import './Dashboard.css';
 import Chart from '../Charts/Charts';
 import hello from "../../Assets/avatar.jpg"
 
@@ -9,32 +9,42 @@ const Main = () => {
                 <div className="main__title">
                     <div className="main__greeting">
                         <h1>Hello Dentsply</h1>
-                        <p>Welcome to your profile</p>
+                        <p>Welcome to the dashboard</p>
                     </div>
                 </div>
-                <div className="main__cards">
+                {/* <div className="main__cards">
                     <div className="card">
-                        <i className="fa fa-line-chart fa-2x text-green"></i>
+                        <i className="fa fa-user-o fa-2x text-lightblue"></i>
                         <div className="card_inner">
-                            <p className="text-primary-p">My Orders</p>
+                            <p className="text-primary-p">Number of suppliers</p>
+                            <span className="font-bold text-title">578</span>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <i className="fa fa-calendar fa-2x text-red"></i>
+                        <div className="card_inner">
+                            <p className="text-primary-p">Number of Orders</p>
+                            <span className="font-bold text-title">2467</span>
                         </div>
                     </div>
                     <div className="card">
                         <i className="fa fa-usd fa-2x text-yellow"></i>
                         <div className="card_inner">
-                            <p className="text-primary-p">Saved Addresses</p>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <i className="fa fa-user-o fa-2x text-lightblue"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Contact Us</p>
+                            <p className="text-primary-p">Capped revenue</p>
+                            <span className="font-bold text-title">9,958,000</span>
                         </div>
                     </div>
 
+                    <div className="card">
+                        <i className="fa fa-line-chart fa-2x text-green"></i>
+                        <div className="card_inner">
+                            <p className="text-primary-p">Total growth</p>
+                            <span className="font-bold text-title">15%</span>
+                        </div>
+                    </div>
                 </div>
 
-                {/* <div className="charts">
+                <div className="charts">
                     <div className="charts__left">
                         <div className="charts__left__title">
                             <div>
