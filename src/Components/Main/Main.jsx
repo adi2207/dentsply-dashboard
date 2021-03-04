@@ -1,5 +1,4 @@
 import './Main.css';
-import hello from "../../Assets/avatar.jpg"
 import Barchart from '../Charts/Barchart'
 import Piechart from '../Charts/Piechart'
 import Worldmap from '../Charts/Worldmap'

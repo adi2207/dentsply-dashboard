@@ -1,6 +1,4 @@
 import './Dashboard.css';
-import Chart from '../Charts/Charts';
-import hello from "../../Assets/avatar.jpg"
 
 const Main = () => {
     return(
