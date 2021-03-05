@@ -28,6 +28,9 @@
   font-size: 18px;
   display: none;
 }
+.sidebar__menu {
+  display: grid;
+}
 .sidebar__menu > h2 {
   /* color: #3ea175; */
   color: #f3f4f6;

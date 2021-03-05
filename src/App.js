@@ -21,8 +21,8 @@ const closeSidebar = () => {
           <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
           <Switch>
             <Route path="/" exact component={Main} />
-            <Route path="/userprofile" component={UserProfile} />
-            <Route path="/dashboard" component={Dashboard} />
+            <Route path="/userprofile" exact component={UserProfile} />
+            <Route path="/dashboard" exact component={Dashboard} />
           </Switch>
           <Sidebar sidebarOpen={sidebarOpen} closeSidebar={closeSidebar} />
         </div>

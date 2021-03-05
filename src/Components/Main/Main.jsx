@@ -14,7 +14,7 @@ import React, { useState } from 'react';
 }
 
 const Main = () => {
-    const [chartValue, setChartValue] = useState('q1')
+    const [chartValue, setChartValue] = useState('')
     function handleChange(e) {
         setChartValue(e.target.value);
        console.log(chartValue)
@@ -31,7 +31,7 @@ const Main = () => {
                </div>
            </div> */}
            <select onChange={handleChange} selected={chartValue}>
-               
+                <option value="">none</option>
                 <option value="q1">quarter1</option>
                 <option value="q2">quarter2</option>
                 <option value="q3">quarter3</option>
@@ -113,7 +113,7 @@ const Main = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="chart-spacing"><Barchart handleChange={handleChange}/></div>
+            <div className="chart-spacing"><Barchart handleChange={handleChange} chartValue={chartValue}/></div>
             <div className="charts">
                 <div className="charts__left">
                 <Piechart/> 

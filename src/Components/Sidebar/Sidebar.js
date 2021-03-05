@@ -1,5 +1,6 @@
 import '../Sidebar/Sidebar.css';
 import avatar from "../../Assets/avatar.jpg";
+import {NavLink} from "react-router-dom";
 
 
 const Sidebar = ({sidebarOpen, closeSidebar }) => {
@@ -18,25 +19,28 @@ const Sidebar = ({sidebarOpen, closeSidebar }) => {
              onClick={() => closeSidebar()}></i>
          </div>
              <div className="sidebar__menu">
-                 <div className="sidebar__link ">
+                 {/* <div className="sidebar__link active_menu_link">
                      <i className="fa fa-home"></i>
                      <a href="/">Home</a>
-                 </div>
+                 </div> */}
+
+                 <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/">
+                 <i className="fa fa-home"></i>Home
+                </NavLink>
                  {/* <div className="sidebar__title ">
                     <h4>MNG</h4>
                 </div> */}
-                 <div className="sidebar__link">
-                     <i className="fa fa-user-secret"></i>
-                     <a href="/dashboard">Dashboard</a>
-                 </div>
-                 <div className="sidebar__link">
-                     <i className="fa fa-building-o"></i>
-                     <a href="/userprofile">My Profile</a>
-                 </div>
-                 <div className="sidebar__link">
-                     <i className="fa fa-wrench"></i>
-                     <a href="#">Coming Soon</a>
-                 </div>
+                 <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/dashboard">
+                    <i className="fa fa-user-secret"></i>Dashboard
+                </NavLink>
+
+                 <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/userprofile">
+                    <i className="fa fa-building-o"></i>My Profile
+                </NavLink>
+                
+                <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/such">
+                    <i className="fa fa-wrench"></i>Coming soon
+                </NavLink>
                  {/* <div className="sidebar__link">
                      <i className="fa fa-archive"></i>
                  </div>
