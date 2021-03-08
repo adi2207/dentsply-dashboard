@@ -12,74 +12,94 @@ function Barchart(props) {
 const categories =  [
   {
     "category": [
-      { "label": "Q1" },
-      { "label": "Q2" },
-      { "label": "Q3" },
-      { "label": "Q4" }
+      { "label": "Januray" },
+      { "label": "February" },
+      { "label": "March" },
+      { "label": "April" },
+      { "label": "May" },
+      { "label": "June" },
+      { "label": "July" },
+      { "label": "August" },
+      { "label": "September" },
+      { "label": "October" },
+      { "label": "November" },
+      { "label": "December" }
     ]
   }
 ]
 useEffect(() => {
-  if(props.chartValue=="q1"){
+  if(props.chartValue=="2019"){
     setPrevYearData([
       { "value": "12000" },
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "0" }
+      { "value": "24000" },
+      { "value": "8000" },
+      { "value": "7000" },
+      { "value": "12000" },
+      { "value": "24000" },
+      { "value": "8000" },
+      { "value": "7000" },
+      { "value": "12000" },
+      { "value": "24000" },
+      { "value": "8000" },
+      { "value": "7000" }
     ])
     
     setCurrentYearData([
       { "value": "24400" },
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "0" }
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" }
     ]);
   }
-  else if(props.chartValue=="q2"){
+  else if(props.chartValue=="2020"){
     setPrevYearData([
-      { "value": "0" },
+      { "value": "14000" },
       { "value": "10500" },
-      { "value": "0" },
-      { "value": "0" }
+      { "value": "16000" },
+      { "value": "12700" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" }
     ])
     
     setCurrentYearData([
-      { "value": "0" },
+      { "value": "30000" },
       { "value": "29800" },
-      { "value": "0" },
-      { "value": "0" }
-    ]);
-  }else if(props.chartValue=="q3"){
-    setPrevYearData([
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "23500" },
-      { "value": "0" }
-    ])
-    
-    setCurrentYearData([
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "20800" },
-      { "value": "0" }
-    ]);
-  }else if(props.chartValue=="q4"){
-    setPrevYearData([
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "16000" }
-    ])
-    
-    setCurrentYearData([
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "0" },
-      { "value": "26800" }
+      { "value": "27600" },
+      { "value": "8600" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "36000" }
     ]);
   }
   else{
       setPrevYearData([
+        { "value": "12000" },
+        { "value": "10500" },
+        { "value": "23500" },
+        { "value": "16000" },
+        { "value": "12000" },
+        { "value": "10500" },
+        { "value": "23500" },
+        { "value": "16000" },
         { "value": "12000" },
         { "value": "10500" },
         { "value": "23500" },
@@ -90,7 +110,15 @@ useEffect(() => {
         { "value": "24400" },
         { "value": "29800" },
         { "value": "20800" },
-        { "value": "26800" }
+        { "value": "26800" },
+        { "value": "12000" },
+        { "value": "10500" },
+        { "value": "23500" },
+        { "value": "16000" },
+        { "value": "12000" },
+        { "value": "10500" },
+        { "value": "23500" },
+        { "value": "16000" }
       ]);
   }
 }, [props.chartValue])
@@ -99,11 +127,11 @@ useEffect(() => {
 
 const dataset = [
   {
-    "seriesname": "Previous Year",
+    "seriesname": "Fixed Price",
     "data": prevYearData
   },
   {
-    "seriesname": "Current Year",
+    "seriesname": "Variable Price",
     "data": currentYearData
   }
 ]
@@ -119,7 +147,7 @@ const chartConfigs = {
     "chart": {
       "theme": "fusion",
       "caption": "Comparison of Quarterly Revenue",
-      "xAxisname": "Quarter",
+      "xAxisname": "Months",
       "yAxisName": "Revenues (In USD)",
       "numberPrefix": "$",
       "plotFillAlpha": "80",

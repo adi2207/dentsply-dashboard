@@ -17,7 +17,10 @@ const Main = () => {
     const [chartValue, setChartValue] = useState('')
     function handleChange(e) {
         setChartValue(e.target.value);
-       console.log(chartValue)
+    }
+    const [productValue, setProductValue] = useState('')
+    function handleProductChange(e) {
+        setProductValue(e.target.value);
     }
     return(
        <main>
@@ -32,10 +35,14 @@ const Main = () => {
            </div> */}
            <select onChange={handleChange} selected={chartValue}>
                 <option value="">none</option>
-                <option value="q1">quarter1</option>
-                <option value="q2">quarter2</option>
-                <option value="q3">quarter3</option>
-                <option value="q4">quarter4</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+            </select>
+            <select onChange={handleProductChange} selected={productValue}>
+                <option value="">none</option>
+                <option value="p1">product 1</option>
+                <option value="p2">product 2</option>
+                <option value="p3">product 3</option>
             </select>
            <div className="main__cards">
                <div className="card">
@@ -113,7 +120,7 @@ const Main = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="chart-spacing"><Barchart handleChange={handleChange} chartValue={chartValue}/></div>
+            <div className="chart-spacing"><Barchart chartValue={chartValue}  productValue={productValue}/></div>
             <div className="charts">
                 <div className="charts__left">
                 <Piechart/> 
