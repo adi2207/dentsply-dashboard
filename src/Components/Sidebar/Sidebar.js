@@ -24,7 +24,7 @@ const Sidebar = ({sidebarOpen, closeSidebar }) => {
                      <a href="/">Home</a>
                  </div> */}
 
-                 <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/">
+                 <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/home">
                  <i className="fa fa-home"></i>Home
                 </NavLink>
                  {/* <div className="sidebar__title ">
@@ -38,7 +38,7 @@ const Sidebar = ({sidebarOpen, closeSidebar }) => {
                     <i className="fa fa-building-o"></i>My Profile
                 </NavLink>
                 
-                <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/such">
+                <NavLink className="sidebar__link" activeClassName="active_menu_link" to="/comingsoon">
                     <i className="fa fa-wrench"></i>Coming soon
                 </NavLink>
                  {/* <div className="sidebar__link">
