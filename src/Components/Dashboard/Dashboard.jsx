@@ -6,8 +6,7 @@ const Main = () => {
            <div className="main__container">
                 <div className="main__title">
                     <div className="main__greeting">
-                        <h1>Hello Dentsply</h1>
-                        <p>Welcome to the dashboard</p>
+                        <h1>DEVELOPMENT IN PROGRESS</h1>
                     </div>
                 </div>
                 {/* <div className="main__cards">

@@ -6,11 +6,10 @@ const Main = () => {
            <div className="main__container">
                 <div className="main__title">
                     <div className="main__greeting">
-                        <h1>Hello Dentsply</h1>
-                        <p>Welcome to your profile</p>
+                        <h1>DEVELOPMENT IN PROGRESS</h1>
                     </div>
                 </div>
-                <div className="main__cards">
+                {/* <div className="main__cards">
                     <div className="card">
                         <i className="fa fa-line-chart fa-2x text-green"></i>
                         <div className="card_inner">
@@ -30,7 +29,7 @@ const Main = () => {
                         </div>
                     </div>
 
-                </div>
+                </div> */}
 
                 {/* <div className="charts">
                     <div className="charts__left">
