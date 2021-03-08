@@ -90,16 +90,107 @@ useEffect(() => {
       { "value": "36000" }
     ]);
   }
+  else if(props.chartValue=="p3"){
+    setPrevYearData([
+      { "value": "1400" },
+      { "value": "15500" },
+      { "value": "12000" },
+      { "value": "15700" },
+      { "value": "20400" },
+      { "value": "5700" },
+      { "value": "8500" },
+      { "value": "30000" },
+      { "value": "20400" },
+      { "value": "10000" },
+      { "value": "17000" },
+      { "value": "30000" }
+    ])
+    
+    setCurrentYearData([
+      { "value": "12000" },
+      { "value": "20800" },
+      { "value": "20600" },
+      { "value": "18600" },
+      { "value": "20400" },
+      { "value": "19000" },
+      { "value": "17000" },
+      { "value": "39000" },
+      { "value": "20400" },
+      { "value": "10000" },
+      { "value": "8000" },
+      { "value": "30000" }
+    ]);
+  }  else if(props.chartValue=="p1"){
+    setPrevYearData([
+      { "value": "10000" },
+      { "value": "15500" },
+      { "value": "15000" },
+      { "value": "13700" },
+      { "value": "27400" },
+      { "value": "9000" },
+      { "value": "7000" },
+      { "value": "38000" },
+      { "value": "24400" },
+      { "value": "8000" },
+      { "value": "17000" },
+      { "value": "30000" }
+    ])
+    
+    setCurrentYearData([
+      { "value": "20000" },
+      { "value": "19800" },
+      { "value": "17600" },
+      { "value": "18600" },
+      { "value": "20400" },
+      { "value": "19000" },
+      { "value": "17000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "29000" },
+      { "value": "27000" },
+      { "value": "36000" }
+    ]);
+  }  else if(props.chartValue=="p2"){
+    setPrevYearData([
+      { "value": "14000" },
+      { "value": "11500" },
+      { "value": "18000" },
+      { "value": "15700" },
+      { "value": "22400" },
+      { "value": "19000" },
+      { "value": "17000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "19000" },
+      { "value": "23000" },
+      { "value": "12000" }
+    ])
+    
+    setCurrentYearData([
+      { "value": "20000" },
+      { "value": "29800" },
+      { "value": "27600" },
+      { "value": "18600" },
+      { "value": "34400" },
+      { "value": "19000" },
+      { "value": "17000" },
+      { "value": "36000" },
+      { "value": "24400" },
+      { "value": "17000" },
+      { "value": "15000" },
+      { "value": "12000" }
+    ]);
+  }
   else{
       setPrevYearData([
-        { "value": "12000" },
+        { "value": "11000" },
         { "value": "10500" },
-        { "value": "23500" },
-        { "value": "16000" },
-        { "value": "12000" },
-        { "value": "10500" },
-        { "value": "23500" },
-        { "value": "16000" },
+        { "value": "20500" },
+        { "value": "15000" },
+        { "value": "11000" },
+        { "value": "17500" },
+        { "value": "22500" },
+        { "value": "20000" },
         { "value": "12000" },
         { "value": "10500" },
         { "value": "23500" },
@@ -108,16 +199,16 @@ useEffect(() => {
       
       setCurrentYearData([
         { "value": "24400" },
+        { "value": "28800" },
+        { "value": "24800" },
         { "value": "29800" },
-        { "value": "20800" },
-        { "value": "26800" },
-        { "value": "12000" },
-        { "value": "10500" },
+        { "value": "22000" },
+        { "value": "17500" },
         { "value": "23500" },
         { "value": "16000" },
-        { "value": "12000" },
+        { "value": "19000" },
         { "value": "10500" },
-        { "value": "23500" },
+        { "value": "22500" },
         { "value": "16000" }
       ]);
   }

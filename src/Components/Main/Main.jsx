@@ -20,7 +20,7 @@ const Main = () => {
     }
     const [productValue, setProductValue] = useState('')
     function handleProductChange(e) {
-        setProductValue(e.target.value);
+        setChartValue(e.target.value);
     }
     return(
        <main>
@@ -38,7 +38,7 @@ const Main = () => {
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
             </select>
-            <select onChange={handleProductChange} selected={productValue}>
+            <select onChange={handleProductChange} selected={chartValue}>
                 <option value="">none</option>
                 <option value="p1">product 1</option>
                 <option value="p2">product 2</option>
