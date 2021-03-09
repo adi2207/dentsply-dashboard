@@ -1,0 +1,11 @@
+{"x":
+    [
+        {"Order Quantity": 1, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0},
+        {"Order Quantity": 1, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 53.0},
+        {"Order Quantity": 4, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 42.0},
+        {"Order Quantity": 6, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 43.0},
+        {"Order Quantity": 2, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0},
+        {"Order Quantity": 2, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0}
+    ]
+}
+
