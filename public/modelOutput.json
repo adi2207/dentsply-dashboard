@@ -1,11 +1,9 @@
 {"x":
     [
-        {"Order Quantity": 1, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0},
-        {"Order Quantity": 1, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 53.0},
-        {"Order Quantity": 4, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 42.0},
-        {"Order Quantity": 6, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 43.0},
-        {"Order Quantity": 2, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0},
-        {"Order Quantity": 2, "Address Delivery Country": "US", "Warehouse": "AX057US", "Day": 2, "Product Base Price": 68.0}
+        {"const": 1.0, "Order Quantity": 2, "Day": 29, "Month": 1, "Address_Delivery_Country_code": "US", "Warehouse_code": "AX057", "predicted_price": 68.55641826501143, "actual_price": 68.0},
+        {"const": 1.0, "Order Quantity": 2, "Day": 20, "Month": 8, "Address_Delivery_Country_code": "US", "Warehouse_code": "AX057", "predicted_price": 68.3072948809682, "actual_price": 68.0},
+        {"const": 1.0, "Order Quantity": 9, "Day": 19, "Month": 6, "Address_Delivery_Country_code": "US", "Warehouse_code": "AX057", "predicted_price": 67.26286588283035, "actual_price": 68.0},
+        {"const": 1.0, "Order Quantity": 1, "Day": 20, "Month": 9, "Address_Delivery_Country_code": "US", "Warehouse_code": "AX057", "predicted_price": 68.44152951958087, "actual_price": 68.0}
     ]
 }
 

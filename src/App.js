@@ -4,6 +4,7 @@ import Main from './Components/Main/Main';
 import Sidebar from './Components/Sidebar/Sidebar';
 import UserProfile from './Components/UserProfile/UserProfile';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Form from './Components/Form/Form';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { redirectRoutes } from "./router.js";
 
@@ -28,6 +29,7 @@ const closeSidebar = () => {
 }
   return (
       <Router>
+        {/* <Route path="/form" exact component={Form} /> */}
         <div className="container">
           <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
           <Switch>
