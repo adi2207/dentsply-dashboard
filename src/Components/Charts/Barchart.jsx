@@ -218,11 +218,11 @@ useEffect(() => {
 
 const dataset = [
   {
-    "seriesname": "Fixed Price",
+    "seriesname": "Base Price",
     "data": prevYearData
   },
   {
-    "seriesname": "Variable Price",
+    "seriesname": "Predicted Price",
     "data": currentYearData
   }
 ]
@@ -237,9 +237,9 @@ const chartConfigs = {
   //Chart Configurations
     "chart": {
       "theme": "fusion",
-      "caption": "Comparison of Monthly Revenue",
+      "caption": "Comparison of Monthly Prices",
       "xAxisname": "Months",
-      "yAxisName": "Revenues (In USD)",
+      "yAxisName": "Prices (In USD)",
       "numberPrefix": "$",
       "plotFillAlpha": "80",
       "divLineIsDashed": "1",

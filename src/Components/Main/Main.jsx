@@ -8,8 +8,8 @@ import React, { useState } from 'react';
  const data = {
     numberofSuplliers: 578,
     numberOfOrders: 3916,
-    totalSales: 102900,
-    cappedRevemew:20030,
+    totalSales: 10290,
+    cappedRevenue:20030,
     totalgrowth:15
 
 }
@@ -68,13 +68,13 @@ const Main = () => {
                    </div>
                </div>
 
-               <div className="card">
+               {/* <div className="card">
                    <i className="fa fa-usd fa-2x text-green"></i>
                    <div className="card_inner">
-                       <p className="text-primary-p">Capped Revenew</p>
+                       <p className="text-primary-p">Capped Revenue</p>
                         <span className="font-bold text-title">{data.cappedRevemew}</span>
                    </div>
-               </div>
+               </div> */}
              </div>
 
             {/* <div className="charts">
