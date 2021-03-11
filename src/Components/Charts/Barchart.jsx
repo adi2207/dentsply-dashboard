@@ -237,7 +237,7 @@ const chartConfigs = {
   //Chart Configurations
     "chart": {
       "theme": "fusion",
-      "caption": "Comparison of Quarterly Revenue",
+      "caption": "Comparison of Monthly Revenue",
       "xAxisname": "Months",
       "yAxisName": "Revenues (In USD)",
       "numberPrefix": "$",
