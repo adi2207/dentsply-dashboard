@@ -23,7 +23,7 @@ const Navbar = ({ sidebarOpen, openSidebar}) => {
             <div className="navbar__left">
                 {/* <a href="#">Subscribers</a>
                 <a href="#">Video Management</a> */}
-                <a className="active_link" href="#">Admin</a>
+                {/* <a className="active_link" href="#">Admin</a> */}
             </div>
             <div className="navbar__right">
             {/* <input

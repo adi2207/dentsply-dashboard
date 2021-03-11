@@ -2,6 +2,7 @@ import './Main.css';
 import Barchart from '../Charts/Barchart'
 import Piechart from '../Charts/Piechart'
 import Worldmap from '../Charts/Worldmap'
+import Form from '../Form/Form'
 import React, { useState } from 'react';
 
  const data = {
@@ -25,7 +26,7 @@ const Main = () => {
     return(
        <main>
            <div className="main__container">
-               
+               <Form></Form>
                {/* <div className="main__title">
                    <div className="main__greeting">
                   <img src={hello} alt="hello"/>

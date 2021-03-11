@@ -29,7 +29,6 @@ const closeSidebar = () => {
 }
   return (
       <Router>
-        {/* <Route path="/form" exact component={Form} /> */}
         <div className="container">
           <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
           <Switch>

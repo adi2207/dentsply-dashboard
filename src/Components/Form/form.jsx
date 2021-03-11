@@ -11,12 +11,12 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
       width: 200,
     },
-    padding: "5%",
-    width: "40%",
+    padding: "1%",
+    width: "80%",
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
     alignItems:"center",
-    margin: "10% auto"
+    margin: "auto"
 },
 }));
 const Form = () => {
@@ -55,7 +55,7 @@ const Form = () => {
                 <TextField id="country" name="country" label="Country" variant="outlined" onChange={handleInput} required/>
                 <TextField id="warehouse" name="warehouse" label="Warehouse" variant="outlined" onChange={handleInput} required/>
                 <Button type="submit" variant="contained" color="primary">
-                    Submit
+                    Predict
                 </Button>
             </Card>
             </form>
