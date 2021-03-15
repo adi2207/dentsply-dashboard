@@ -31,7 +31,6 @@ const Navbar = ({ sidebarOpen, openSidebar}) => {
           const test = teams_data.filter(team => {
             return team.toLowerCase().includes(e.target.value.toLowerCase());
           });
-          console.log("test: ", test);
 
           // uncomment line below and teams is logged as I want
           setTeams(test);

@@ -8,22 +8,25 @@ function Barchart(props) {
   const [prevYearData, setPrevYearData] = useState([])
   const [currentYearData, setCurrentYearData] = useState([])
 
+  useEffect(() => {
+    console.log("here",props.formData);
+  }, [props.formData])
  // STEP 2- Define the categories representing the labels on the X-axis
 const categories =  [
   {
     "category": [
-      { "label": "Januray" },
-      { "label": "February" },
-      { "label": "March" },
-      { "label": "April" },
+      { "label": "Jan" },
+      { "label": "Feb" },
+      { "label": "Mar" },
+      { "label": "Apr" },
       { "label": "May" },
-      { "label": "June" },
-      { "label": "July" },
-      { "label": "August" },
-      { "label": "September" },
-      { "label": "October" },
-      { "label": "November" },
-      { "label": "December" }
+      { "label": "Jun" },
+      { "label": "Jul" },
+      { "label": "Aug" },
+      { "label": "Sept" },
+      { "label": "Oct" },
+      { "label": "Nov" },
+      { "label": "Dec" }
     ]
   }
 ]
@@ -246,6 +249,14 @@ const chartConfigs = {
       "divLineDashLen": "1",
       "divLineGapLen": "1"
     },
+    "trendlines": [{
+        "line": [{
+            "startvalue": "17500",
+            "color": "#29C3BE",
+            "displayvalue": "Target - $18K"
+        }]
+    }],
+
     "categories": categories,
     "dataset": dataset,
   }
@@ -253,8 +264,8 @@ const chartConfigs = {
   return(
     <div>
       <ReactFC {...chartConfigs} 
-       width="100%"
-       height="100%"
+        width="100%"
+        height="50%"
       />
     </div>
   )

@@ -32,6 +32,7 @@ const closeSidebar = () => {
         <div className="container">
           <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar} />
           <Switch>
+            {/* <Route path="/form" exact component={Form} /> */}
             <Route path="/userprofile" exact component={UserProfile} />
             <Route path="/dashboard" exact component={Dashboard} />
             <Route path="/home" exact component={Main} />

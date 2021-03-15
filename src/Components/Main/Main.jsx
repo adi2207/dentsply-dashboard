@@ -6,27 +6,41 @@ import Form from '../Form/Form'
 import React, { useState } from 'react';
 
  const data = {
-    numberofSuplliers: 578,
-    numberOfOrders: 3916,
-    totalSales: 10290,
-    cappedRevenue:20030,
+    numberofSuplliers: "578",
+    numberOfOrders: "3916",
+    totalSales: "10,290",
+    cappedRevenue:"20,030",
     totalgrowth:15
 
 }
 
 const Main = () => {
     const [chartValue, setChartValue] = useState('')
+    const [loading, setLoading]= useState(false);
     function handleChange(e) {
         setChartValue(e.target.value);
     }
     const [productValue, setProductValue] = useState('')
+    const [formData, setFormData] = useState([]);
+
     function handleProductChange(e) {
         setChartValue(e.target.value);
     }
+
+    const onPredict = (formDataReceived) => {    
+        setLoading(true);
+        setFormData(formDataReceived);
+        setLoading(false);
+      };
+
+      if(loading){
+          return null;
+      }
+      else{
     return(
        <main>
            <div className="main__container">
-               <Form></Form>
+               <Form onPredict={onPredict}></Form>
                {/* <div className="main__title">
                    <div className="main__greeting">
                   <img src={hello} alt="hello"/>
@@ -34,7 +48,7 @@ const Main = () => {
                    <p>Welcome to your admin Dashboard</p>
                </div>
            </div> */}
-           <select onChange={handleChange} selected={chartValue}>
+           {/* <select onChange={handleChange} selected={chartValue}>
                 <option value="">none</option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
@@ -44,7 +58,7 @@ const Main = () => {
                 <option value="p1">product 1</option>
                 <option value="p2">product 2</option>
                 <option value="p3">product 3</option>
-            </select>
+            </select> */}
            <div className="main__cards">
                <div className="card">
                    <i className="fa fa-user-o fa-2x text-lightblue"></i>
@@ -68,13 +82,13 @@ const Main = () => {
                    </div>
                </div>
 
-               {/* <div className="card">
+               <div className="card">
                    <i className="fa fa-usd fa-2x text-green"></i>
                    <div className="card_inner">
                        <p className="text-primary-p">Capped Revenue</p>
-                        <span className="font-bold text-title">{data.cappedRevemew}</span>
+                        <span className="font-bold text-title">{data.cappedRevenue}</span>
                    </div>
-               </div> */}
+               </div>
              </div>
 
             {/* <div className="charts">
@@ -121,7 +135,9 @@ const Main = () => {
                     </div>
                 </div>
             </div> */}
-            <div className="chart-spacing"><Barchart chartValue={chartValue}  productValue={productValue}/></div>
+            <div className="chart-spacing">
+                <Barchart formData={formData} chartValue={chartValue}  productValue={productValue}/>
+            </div>
             <div className="charts">
                 <div className="charts__left">
                 <Piechart/> 
@@ -133,5 +149,6 @@ const Main = () => {
            </div>
        </main>
     )
+        }
 }
 export default Main;
